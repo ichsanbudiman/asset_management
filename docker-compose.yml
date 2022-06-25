@@ -30,7 +30,8 @@ services:
       - minio
 
   backend:
-    image: ichsanbudiman/asset_management:0.1
+    build:
+      dockerfile: Dockerfile
     ports:
       - "8000:80"
     environment:
