@@ -1,7 +1,7 @@
 mkdir -p ${HOME}/data
 docker run \
-  -p 9000:9000 \
-  -p 9001:9001 \
+  -p 9090:9000 \
+  -p 9191:9001 \
   --user $(id -u):$(id -g) \
   --name minio1 \
   -e "MINIO_ROOT_USER=AKIAIOSFODNN7EXAMPLE" \
